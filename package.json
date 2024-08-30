@@ -1,5 +1,5 @@
 {
-  "name": "@pyroscope/flamegraph",
+  "name": "@xquare/xquare-flamegraph",
   "version": "0.35.6",
   "main": "dist/index.node.js",
   "browser": "dist/index.js",
