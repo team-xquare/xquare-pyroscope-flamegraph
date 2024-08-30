@@ -1,0 +1,30 @@
+import React from 'react';
+import { ClickEvent, MenuProps } from '@szhsin/react-menu';
+export interface DropdownProps {
+    id?: string;
+    disabled?: boolean;
+    ['data-testid']?: string;
+    className?: string;
+    menuButtonClassName?: string;
+    label: string;
+    value?: string;
+    children?: JSX.Element[] | JSX.Element;
+    onItemClick?: (event: ClickEvent) => void;
+    overflow?: MenuProps['overflow'];
+    position?: MenuProps['position'];
+    direction?: MenuProps['direction'];
+    align?: MenuProps['align'];
+    viewScroll?: MenuProps['viewScroll'];
+    arrow?: MenuProps['arrow'];
+    offsetX?: MenuProps['offsetX'];
+    offsetY?: MenuProps['offsetY'];
+    ariaLabel?: MenuProps['aria-label'];
+    menuButton?: JSX.Element;
+    portal?: MenuProps['portal'];
+}
+export default function Dropdown({ id, children, className, disabled, value, label, onItemClick, overflow, position, direction, align, viewScroll, arrow, offsetX, offsetY, menuButtonClassName, ariaLabel, portal, ...props }: DropdownProps): JSX.Element;
+export declare const SubMenu: React.NamedExoticComponent<import("@szhsin/react-menu").SubMenuProps>;
+export declare const MenuItem: React.NamedExoticComponent<import("@szhsin/react-menu").MenuItemProps>;
+export declare const MenuButton: any;
+export declare const FocusableItem: React.NamedExoticComponent<import("@szhsin/react-menu").FocusableItemProps>;
+export declare const MenuGroup: React.NamedExoticComponent<import("@szhsin/react-menu").MenuGroupProps>;
